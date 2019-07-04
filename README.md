@@ -1,5 +1,5 @@
 # kawaii-vscode
 
-練習で作成
+Heal fatigue with cute images.
 
 ![Imgur](https://i.imgur.com/dbdzvpO.png)
