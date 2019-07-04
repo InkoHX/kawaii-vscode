@@ -1,0 +1,57 @@
+{
+  "name": "kawaii-vscode",
+  "displayName": "Kawaii VSCode",
+  "version": "1.0.0",
+  "description": "I will cure your fatigue.",
+  "main": "dist/extension.js",
+  "repository": "https://github.com/InkoHX/kawaii-vscode.git",
+  "author": "InkoHX <inkohx@gmail.com>",
+  "publisher": "inkohx",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint-fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "kawaii-vscode.nekogirl",
+        "title": "Kawaii VSCode - Nekogirl"
+      },
+      {
+        "command": "kawaii-vscode.nekogirl-gif",
+        "title": "Kawaii VSCode - Nekogirl (gif)"
+      },
+      {
+        "command": "kawaii-vscode.foxgirl",
+        "title": "Kawaii VSCode - Foxgirl"
+      },
+      {
+        "command": "kawaii-vscode.kiss",
+        "title": "Kawaii VSCode - Kiss"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.10",
+    "@types/node-fetch": "^2.3.7",
+    "@types/vscode": "^1.35.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2",
+    "vscode": "^1.1.35"
+  },
+  "engines": {
+    "vscode": "^1.31.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
