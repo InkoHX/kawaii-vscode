@@ -1,8 +1,9 @@
 {
   "name": "kawaii-vscode",
   "displayName": "Kawaii VSCode",
+  "icon": "https://github.com/InkoHX/kawaii-vscode/blob/master/media/icon.png?raw=true",
   "version": "1.0.0",
-  "description": "I will cure your fatigue.",
+  "description": "Heal fatigue with cute images.",
   "main": "dist/extension.js",
   "repository": "https://github.com/InkoHX/kawaii-vscode.git",
   "author": "InkoHX <inkohx@gmail.com>",
