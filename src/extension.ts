@@ -1,5 +1,5 @@
 import { commands, ExtensionContext, window } from "vscode";
-import Nekoslife from "./api/nekoslife";
+import Nekoslife from "./api/v2";
 import Utils from "./util/utils";
 
 export async function activate(context: ExtensionContext): Promise<void> {
