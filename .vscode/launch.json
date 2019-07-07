@@ -4,8 +4,9 @@
     {
       "type": "extensionHost",
       "request": "launch",
-      "name": "拡張機能の起動",
+      "name": "Launch Extension",
       "runtimeExecutable": "${execPath}",
+      "sourceMaps": true,
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}"
       ],
