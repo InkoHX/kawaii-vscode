@@ -4,8 +4,9 @@
   "icon": "media/icon.png",
   "version": "1.0.0",
   "description": "Heal fatigue with cute images.",
-  "main": "dist/extension.js",
+  "main": "dist/Extension.js",
   "repository": "https://github.com/InkoHX/kawaii-vscode.git",
+  "homepage": "https://github.com/InkoHX/kawaii-vscode.git#readme",
   "author": "InkoHX <inkohx@gmail.com>",
   "publisher": "inkohx",
   "license": "MIT",
@@ -14,6 +15,9 @@
     "watch": "tsc -w -p .",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint-fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "bugs": {
+    "url": "https://github.com/InkoHX/kawaii-vscode/issues"
   },
   "categories": [
     "Other"
@@ -27,21 +31,34 @@
     "*"
   ],
   "contributes": {
+    "configuration": [
+      {
+        "title": "Kawaii VSCode",
+        "properties": {
+          "kawaii-vscode.config.nsfw": {
+            "description": "NSFW（R18）コマンドの使用",
+            "type": "boolean",
+            "default": false,
+            "scope": "window"
+          }
+        }
+      }
+    ],
     "commands": [
       {
-        "command": "kawaii-vscode.nekogirl",
+        "command": "kawaii-vscode.command.catgirl",
         "title": "Kawaii VSCode - Nekogirl"
       },
       {
-        "command": "kawaii-vscode.nekogirl-gif",
+        "command": "kawaii-vscode.command.catgirl-gif",
         "title": "Kawaii VSCode - Nekogirl (gif)"
       },
       {
-        "command": "kawaii-vscode.foxgirl",
+        "command": "kawaii-vscode.command.foxgirl",
         "title": "Kawaii VSCode - Foxgirl"
       },
       {
-        "command": "kawaii-vscode.kiss",
+        "command": "kawaii-vscode.command.kiss",
         "title": "Kawaii VSCode - Kiss"
       }
     ]
