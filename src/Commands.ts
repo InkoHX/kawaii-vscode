@@ -1,16 +1,16 @@
 import { commands, ExtensionContext } from "vscode";
 import Command from "./command/base/Command";
-import CatGirl from "./command/picture/CatgirlCommand";
-import FoxGirl from "./command/picture/FoxgirlCommand";
-import CatGirlGif from "./command/picture/gif/CatgirlGifCommand";
-import Kiss from "./command/picture/KissCommand";
+import CatgirlCommand from "./command/picture/CatgirlCommand";
+import FoxgirlCommand from "./command/picture/FoxgirlCommand";
+import CatGirlGifCommand from "./command/picture/gif/CatgirlGifCommand";
+import KissCommand from "./command/picture/KissCommand";
 
 function getCommandList(context: ExtensionContext): Command[] {
   return [
-    new CatGirl(context, "catgirl"),
-    new CatGirlGif(context, "catgirl-gif"),
-    new FoxGirl(context, "foxgirl"),
-    new Kiss(context, "kiss"),
+    new CatgirlCommand(context, "catgirl"),
+    new CatGirlGifCommand(context, "catgirl-gif"),
+    new FoxgirlCommand(context, "foxgirl"),
+    new KissCommand(context, "kiss"),
   ];
 }
 
