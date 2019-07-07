@@ -1,10 +1,12 @@
 import { commands, ExtensionContext } from "vscode";
 import Command from "./command/base/Command";
-import CatGirl from "./command/CatgirlCommand";
+import CatGirl from "./command/picture/CatgirlCommand";
+import CatGirlGif from "./command/picture/gif/CatgirlGifCommand";
 
 function getCommandList(context: ExtensionContext): Command[] {
   return [
     new CatGirl(context, "catgirl"),
+    new CatGirlGif(context, "catgirl-gif"),
   ];
 }
 

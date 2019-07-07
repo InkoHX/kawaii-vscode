@@ -1,5 +1,5 @@
 import { window } from "vscode";
-import PictureCommand from "./base/PictureCommand";
+import PictureCommand from "../base/PictureCommand";
 
 export default class extends PictureCommand {
   public async run(): Promise<void> {
