@@ -19,7 +19,7 @@ export default abstract class Command {
 
   public async _run(): Promise<void> {
     const config = workspace.getConfiguration();
-    if (this.nsfw && config.get("kawaii-vscode.config.nsfw")) {
+    if (this.nsfw && !config.get("kawaii-vscode.config.nsfw")) {
       window.showInformationMessage("このコマンドを使用するには設定からNSFWコンテンツの表示を許可してください。");
       return;
     }
