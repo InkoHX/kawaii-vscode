@@ -1,6 +1,6 @@
 import { ExtensionContext } from "vscode";
 import { registerCommands } from "./Commands";
 
-export async function activate(context: ExtensionContext): Promise<void> {
+export function activate(context: ExtensionContext): void {
   registerCommands(context);
 }
