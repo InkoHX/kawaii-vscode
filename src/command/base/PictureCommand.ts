@@ -12,7 +12,7 @@ export default abstract class PictureCommand extends Command {
 
   protected createWebviewPanel(
     url: string,
-    viewType: string = "kawaii.vscode.webview",
+    viewType: string = "kawaii-vscode.webview",
     title: string = `Kawaii VSCode - ${this.name}`,
   ): void {
     const panel: WebviewPanel = window.createWebviewPanel(viewType, title, { viewColumn: ViewColumn.One });
