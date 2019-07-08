@@ -5,6 +5,7 @@ import FoxgirlCommand from "./command/picture/FoxgirlCommand";
 import CatGirlGifCommand from "./command/picture/gif/CatgirlGifCommand";
 import KissCommand from "./command/picture/KissCommand";
 import LewdCatgirlCommand from "./command/picture/nsfw/LewdCatgirlCommand";
+import LewdFoxgirlCommand from "./command/picture/nsfw/LewdFoxgirlCommand";
 
 function getCommandList(context: ExtensionContext): Command[] {
   return [
@@ -13,6 +14,7 @@ function getCommandList(context: ExtensionContext): Command[] {
     new FoxgirlCommand(context, "foxgirl"),
     new KissCommand(context, "kiss"),
     new LewdCatgirlCommand(context, "lewd-catgirl", { nsfw: true }),
+    new LewdFoxgirlCommand(context, "lewd-foxgirl", { nsfw: true }),
   ];
 }
 

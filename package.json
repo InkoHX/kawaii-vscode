@@ -32,7 +32,8 @@
     "onCommand:kawaii-vscode.command.catgirl-gif",
     "onCommand:kawaii-vscode.command.foxgirl",
     "onCommand:kawaii-vscode.command.kiss",
-    "onCommand:kawaii-vscode.command.lewd-catgirl"
+    "onCommand:kawaii-vscode.command.lewd-catgirl",
+    "onCommand:kawaii-vscode.command.lewd-foxgirl"
   ],
   "contributes": {
     "configuration": [
@@ -51,23 +52,33 @@
     "commands": [
       {
         "command": "kawaii-vscode.command.catgirl",
-        "title": "Kawaii VSCode - Catgirl"
+        "title": "Kawaii VSCode - Catgirl",
+        "category": "Kawaii VSCode - SFW"
       },
       {
         "command": "kawaii-vscode.command.catgirl-gif",
-        "title": "Kawaii VSCode - Catgirl (gif)"
+        "title": "Kawaii VSCode - Catgirl (gif)",
+        "category": "Kawaii VSCode - SFW"
       },
       {
         "command": "kawaii-vscode.command.foxgirl",
-        "title": "Kawaii VSCode - Foxgirl"
+        "title": "Kawaii VSCode - Foxgirl",
+        "category": "Kawaii VSCode - SFW"
       },
       {
         "command": "kawaii-vscode.command.kiss",
-        "title": "Kawaii VSCode - Kiss"
+        "title": "Kawaii VSCode - Kiss",
+        "category": "Kawaii VSCode - SFW"
       },
       {
         "command": "kawaii-vscode.command.lewd-catgirl",
-        "title": "Kawaii VSCode - Catgirl (Lewd)"
+        "title": "Kawaii VSCode - Catgirl",
+        "category": "Kawaii VSCode - NSFW"
+      },
+      {
+        "command": "kawaii-vscode.command.lewd-foxgirl",
+        "title": "Kawaii VSCode - Foxgirl",
+        "category": "Kawaii VSCode - NSFW"
       }
     ]
   },
