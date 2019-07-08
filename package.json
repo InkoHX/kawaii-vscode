@@ -31,7 +31,8 @@
     "onCommand:kawaii-vscode.command.catgirl",
     "onCommand:kawaii-vscode.command.catgirl-gif",
     "onCommand:kawaii-vscode.command.foxgirl",
-    "onCommand:kawaii-vscode.command.kiss"
+    "onCommand:kawaii-vscode.command.kiss",
+    "onCommand:kawaii-vscode.command.lewd-catgirl"
   ],
   "contributes": {
     "configuration": [
@@ -63,6 +64,10 @@
       {
         "command": "kawaii-vscode.command.kiss",
         "title": "Kawaii VSCode - Kiss"
+      },
+      {
+        "command": "kawaii-vscode.command.lewd-catgirl",
+        "title": "Kawaii VSCode - Catgirl (Lewd)"
       }
     ]
   },
