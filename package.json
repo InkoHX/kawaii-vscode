@@ -51,11 +51,11 @@
     "commands": [
       {
         "command": "kawaii-vscode.command.catgirl",
-        "title": "Kawaii VSCode - Nekogirl"
+        "title": "Kawaii VSCode - Catgirl"
       },
       {
         "command": "kawaii-vscode.command.catgirl-gif",
-        "title": "Kawaii VSCode - Nekogirl (gif)"
+        "title": "Kawaii VSCode - Catgirl (gif)"
       },
       {
         "command": "kawaii-vscode.command.foxgirl",
