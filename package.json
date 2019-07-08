@@ -28,7 +28,10 @@
     "Image"
   ],
   "activationEvents": [
-    "*"
+    "onCommand:kawaii-vscode.command.catgirl",
+    "onCommand:kawaii-vscode.command.catgirl-gif",
+    "onCommand:kawaii-vscode.command.foxgirl",
+    "onCommand:kawaii-vscode.command.kiss"
   ],
   "contributes": {
     "configuration": [
