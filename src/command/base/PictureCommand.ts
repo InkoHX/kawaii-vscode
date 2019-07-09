@@ -1,6 +1,6 @@
 import { ExtensionContext, ViewColumn, WebviewPanel, window } from "vscode";
 import NekoslifeV2 from "../../api/nekoslife/v2";
-import Command, { CommandOptions } from "./command";
+import Command, { CommandOptions } from "./Command";
 
 export default abstract class PictureCommand extends Command {
   public v2: NekoslifeV2;
