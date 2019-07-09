@@ -87,7 +87,7 @@
     "@types/node-fetch": "^2.3.7",
     "@types/vscode": "^1.35.0",
     "tslint": "^5.18.0",
-    "typescript": "^3.5.2",
+    "typescript": "^3.5.3",
     "vscode": "^1.1.35"
   },
   "engines": {
