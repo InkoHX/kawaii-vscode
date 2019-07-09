@@ -1,6 +1,6 @@
 <div align="center">
 
-# Kawaii VSCode
+# Kawaii VS Code
 
 **Heal fatigue with cute images.**
 
