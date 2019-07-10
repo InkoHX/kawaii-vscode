@@ -2,7 +2,7 @@
   "name": "kawaii-vscode",
   "displayName": "Kawaii VS Code",
   "icon": "media/icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Heal fatigue with cute images.",
   "main": "dist/Extension.js",
   "repository": "https://github.com/InkoHX/kawaii-vscode.git",
@@ -14,7 +14,8 @@
     "build": "tsc -p .",
     "watch": "tsc -w -p .",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
-    "lint-fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
+    "lint-fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "vscode:prepublish": "yarn run lint && yarn run build"
   },
   "bugs": {
     "url": "https://github.com/InkoHX/kawaii-vscode/issues"
