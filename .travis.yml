@@ -8,5 +8,3 @@ node_js: 10
 before_install: curl -o- -L https://yarnpkg.com/install.sh | bash
 install: yarn
 script: yarn run lint
-
-cache: yarn
