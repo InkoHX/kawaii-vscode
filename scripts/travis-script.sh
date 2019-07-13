@@ -6,20 +6,20 @@ NOCOLOR="\033[0m"
 
 dir="dist"
 
-echo -e "${YELLOW}[TEST] ${NOCOLOR}checks TypeScript code."
+printf "${YELLOW}[TEST] ${NOCOLOR}checks TypeScript code."
 yarn run lint
-echo -e "${GREEN}[TEST] Passing"
+printf "${GREEN}[TEST] Passing"
 
 if [ -d $dir ]; then
-  echo -e "${YELLOW}[INFO] ${NOCOLOR}Removing old output folder..."
+  printf "${YELLOW}[INFO] ${NOCOLOR}Removing old output folder..."
   rm -rf $dir
-  echo -e "${GREEN}[INFO] ${NOCOLOR}Done."
+  printf "${GREEN}[INFO] ${NOCOLOR}Done."
 fi
 
-echo -e "${YELLOW}[TEST] ${NOCOLOR}compile"
+printf "${YELLOW}[TEST] ${NOCOLOR}compile"
 yarn run build
-echo -e "${GREEN}[TEST] Passing"
+printf "${GREEN}[TEST] Passing"
 
-echo "${YELLOW}[INFO] ${NOCOLOR}Removing output folder..."
+printf "${YELLOW}[INFO] ${NOCOLOR}Removing output folder..."
 rm -rf $dir
-echo "${GREEN}[INFO] ${NOCOLOR}Done."
+printf "${GREEN}[INFO] ${NOCOLOR}Done."

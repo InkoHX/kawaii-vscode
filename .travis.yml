@@ -6,7 +6,9 @@ language: node_js
 node_js: 10
 
 before_install:
-  - bash ./scripts/travis-install.sh
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - yarn --version
 
 install: yarn install
 
