@@ -6,16 +6,12 @@ language: node_js
 node_js: 10
 
 before_install:
-  - echo "Updating Yarn"
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - yarn --version
-  - echo "Yarn has been updated."
-  - export PATH=$HOME/.yarn/bin:$PATH
+  - bash ./scripts/travis-install.sh
 
 install: yarn install
 
 script:
-  - bash ./scripts/travis.sh
+  - bash ./scripts/travis-script.sh
 
 cache:
   yarn: true
