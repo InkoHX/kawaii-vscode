@@ -1,5 +1,6 @@
 .vscode
 src/**
+scripts/**
 .gitignore
 tsconfig.json
 tsconfig.tsbuildinfo
