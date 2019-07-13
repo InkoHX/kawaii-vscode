@@ -17,7 +17,7 @@ if [ -d $dir ]; then
   printf "${GREEN}[INFO] ${CYAN}Done.\n"
 fi
 
-printf "${YELLOW}[TEST] ${NOCOLOR}compile\n\n"
+printf "${YELLOW}[TEST] ${NOCOLOR}Test compile\n\n"
 yarn run build
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n"
 
