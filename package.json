@@ -14,7 +14,7 @@
     "build": "tsc -p .",
     "watch": "tsc -w -p .",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
-    "lint-fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
     "vscode:prepublish": "yarn run lint && yarn run build"
   },
   "bugs": {
