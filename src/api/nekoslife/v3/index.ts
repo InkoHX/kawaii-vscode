@@ -126,4 +126,3 @@ export default class NekoslifeV3 {
     return body;
   }
 }
-
