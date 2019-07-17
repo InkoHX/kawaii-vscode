@@ -64,7 +64,21 @@ type ImgNsfwEndpoint = "neko_lewd"
   | "keta_avatar"
   | "yiff_lewd"
 
-type GifNsfwEndpoint = "";
+type GifNsfwEndpoint = "neko"
+  | "classic"
+  | "feet"
+  | "kini"
+  | "tits"
+  | "pussy"
+  | "cum"
+  | "spank"
+  | "all_tags"
+  | "girls_solo"
+  | "blow_job"
+  | "yuri"
+  | "anal"
+  | "pussy_wank"
+  | "yiff";
 
 interface NekoslifeV3Body {
   data: {
