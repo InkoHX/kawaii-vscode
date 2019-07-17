@@ -62,7 +62,7 @@ type ImgNsfwEndpoint = "neko_lewd"
   | "keta_lewd"
   | "smallboobs_lewd"
   | "keta_avatar"
-  | "yiff_lewd"
+  | "yiff_lewd";
 
 type GifNsfwEndpoint = "neko"
   | "classic"
