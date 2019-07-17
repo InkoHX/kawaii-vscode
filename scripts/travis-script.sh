@@ -1,4 +1,6 @@
-#!/bin/bash -eu
+#!/bin/bash
+
+set -eu
 
 YELLOW="\033[33m"
 GREEN="\033[32m"
