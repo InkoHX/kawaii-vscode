@@ -25,7 +25,7 @@ export default abstract class PictureCommand extends Command {
   }
 
   public getVersion(): Version {
-    const version = this.getConfig().get("kawaii-vscode.config.version");
+    const version = this.config.get("kawaii-vscode.config.version");
     if (version === "v3") return "v3";
     else if (version === "v2") return "v2";
     else return "v3";
