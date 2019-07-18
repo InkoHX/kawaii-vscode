@@ -1,7 +1,12 @@
-.vscode
+.vscode/**
+.github/**
+node_modules/**
 src/**
 scripts/**
 .gitignore
 tsconfig.json
 tsconfig.tsbuildinfo
 tslint.json
+.travis.yml
+yarn.lock
+*.map

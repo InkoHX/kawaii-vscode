@@ -1,8 +1,15 @@
 # Change Log
 
-## Unreleased
+## Unrelease
 
 ...
+
+## [1.0.2](https://github.com/InkoHX/kawaii-vscode/releases/tag/1.0.2) - 2019-07-10
+
+### Updates
+
+- Add Nekoslife v3 option.
+- Add keybindings
 
 ## [1.0.1](https://github.com/InkoHX/kawaii-vscode/releases/tag/1.0.1) - 2019-07-10
 
