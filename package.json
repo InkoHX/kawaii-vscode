@@ -48,7 +48,7 @@
             "scope": "application"
           },
           "kawaii-vscode.config.version": {
-            "description": "Nekoslifeのバージョンを変更します。（V3推奨）",
+            "description": "Nekoslifeのバージョンを変更します。（変更後はVS Codeを再起動してください。）",
             "type": "string",
             "enum": [
               "v2",
