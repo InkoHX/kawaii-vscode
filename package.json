@@ -45,17 +45,17 @@
             "description": "NSFW（R18）コマンドを使用できるようにします。",
             "type": "boolean",
             "default": false,
-            "scope": "application"
+            "scope": "window"
           },
           "kawaii-vscode.config.version": {
-            "description": "Nekoslifeのバージョンを変更します。（変更後はVS Codeを再起動してください。）",
+            "description": "Nekoslifeのバージョンを変更します。",
             "type": "string",
             "enum": [
               "v2",
               "v3"
             ],
             "default": "v3",
-            "scope": "application"
+            "scope": "window"
           }
         }
       }

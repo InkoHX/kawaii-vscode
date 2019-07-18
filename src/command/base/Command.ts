@@ -33,13 +33,5 @@ export default abstract class Command {
     });
   }
 
-  public getConfig(): WorkspaceConfiguration {
-    return this.config;
-  }
-
-  public getWindow(): typeof window {
-    return this.window;
-  }
-
   public abstract async run(): Promise<void>;
 }
