@@ -6,4 +6,4 @@ if (Test-Path $outputfolder) {
   Write-Output "Done."
 }
 
-yarn.cmd run build
+yarn.cmd run compile

@@ -20,7 +20,7 @@ if [ -d $dir ]; then
 fi
 
 printf "${YELLOW}[TEST] ${NOCOLOR}Test compile\n\n"
-yarn run build
+yarn run compile
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n"
 
 printf "${YELLOW}[INFO] ${NOCOLOR}Removing output folder...\n"

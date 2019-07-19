@@ -11,11 +11,11 @@
   "publisher": "inkohx",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p .",
+    "compile": "tsc -p .",
     "watch": "tsc -w -p .",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
-    "vscode:prepublish": "yarn run lint && yarn run build"
+    "vscode:prepublish": "yarn run lint && yarn run compile"
   },
   "bugs": {
     "url": "https://github.com/InkoHX/kawaii-vscode/issues"
