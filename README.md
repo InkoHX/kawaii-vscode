@@ -2,13 +2,13 @@
 
 # Kawaii VS Code
 
-**Heal fatigue with cute images.**
-
 [![Visual Studio Code Marketplace](https://vsmarketplacebadge.apphb.com/version/InkoHX.kawaii-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=InkoHX.kawaii-vscode&ssr=false)
 [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/InkoHX.kawaii-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=InkoHX.kawaii-vscode&ssr=false)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/InkoHX.kawaii-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=InkoHX.kawaii-vscode&ssr=false)
 
 [![Build Status](https://travis-ci.org/InkoHX/kawaii-vscode.svg?branch=master)](https://travis-ci.org/InkoHX/kawaii-vscode)
+
+</div>
 
 ## Images
 
@@ -26,5 +26,3 @@
 | Kawaii VS Code - Catgirl (GIF) | `Shift+G C` |
 |    Kawaii VS Code - Foxgirl    |  `Shift+F`  |
 |     Kawaii VS Code - Kiss      |  `Shift+K`  |
-
-</div>
