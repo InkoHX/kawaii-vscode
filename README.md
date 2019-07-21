@@ -18,11 +18,11 @@
 
 ## Keybindings
 
-| Command                        |     Key     |
-| ------------------------------ | :---------: |
-| Kawaii VS Code - Catgirl       |  `Shift+C`  |
+|            Command             |     Key     |
+| :----------------------------: | :---------: |
+|    Kawaii VS Code - Catgirl    |  `Shift+C`  |
 | Kawaii VS Code - Catgirl (GIF) | `Shift+G C` |
-| Kawaii VS Code - Foxgirl       |  `Shift+F`  |
-| Kawaii VS Code - Kiss          |  `Shift+K`  |
+|    Kawaii VS Code - Foxgirl    |  `Shift+F`  |
+|     Kawaii VS Code - Kiss      |  `Shift+K   |
 
 </div>
