@@ -14,6 +14,8 @@
 
 ![Foxgirl Screenshot - Kawaii VS Code v1.0.0](https://i.imgur.com/dbdzvpO.png)
 
+------------------------------------------------------------------------------
+
 ![Catgirl Screenshot - Kawaii VS Code v1.0.2](https://i.imgur.com/bJbGLcg.png)
 
 ## Keybindings
