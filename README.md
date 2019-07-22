@@ -15,11 +15,11 @@ Give you healing during the break.
 
 ## Screenshots
 
-![Foxgirl Screenshot - Kawaii VS Code v1.0.0](https://i.imgur.com/dbdzvpO.png)
+![Foxgirl Screenshot - Kawaii VS Code v1.0.0](https://github.com/InkoHX/kawaii-vscode/blob/master/media/screenshot-1.png?raw=true)
 
 ------------------------------------------------------------------------------
 
-![Catgirl Screenshot - Kawaii VS Code v1.0.2](https://i.imgur.com/bJbGLcg.png)
+![Catgirl Screenshot - Kawaii VS Code v1.0.2](https://github.com/InkoHX/kawaii-vscode/blob/master/media/screenshot-2.png?raw=true)
 
 ## Keybindings
 
