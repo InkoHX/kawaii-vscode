@@ -49,5 +49,5 @@ if [ -d $dir ]; then
 fi
 
 printf "${YELLOW}[TEST] ${NOCOLOR}Checking for errors.\n\n"
-yarn run compile -noEmit
+yarn run compile --noEmit
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n"
