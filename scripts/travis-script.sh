@@ -38,7 +38,7 @@ sleep 3
 
 dir="dist"
 
-printf "${YELLOW}[TEST] ${NOCOLOR}Check the code.\n\n"
+printf "${YELLOW}[TEST] ${NOCOLOR}Checking the code.\n\n"
 yarn run lint
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n\n"
 
@@ -48,6 +48,6 @@ if [ -d $dir ]; then
   printf "${GREEN}[INFO] ${CYAN}Done.\n"
 fi
 
-printf "${YELLOW}[TEST] ${NOCOLOR}Test compile\n\n"
+printf "${YELLOW}[TEST] ${NOCOLOR}Checking for errors.\n\n"
 yarn run compile -noEmit
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n"
