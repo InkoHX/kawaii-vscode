@@ -10,7 +10,7 @@ before_install:
   - export PATH=$HOME/.yarn/bin:$PATH
   - yarn --version
 
-install: yarn install
+install: yarn install --no-lockfile
 
 script:
   - bash ./scripts/travis-script.sh
