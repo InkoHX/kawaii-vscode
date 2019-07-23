@@ -28,11 +28,11 @@ eslint_version="npx eslint --version" || (
   exit 1;
 )
 
-printf "${GREEN}[INFO] === Kawaii VS Code - Test ==="
-printf "${GREEN}[INFO] Node: ${node_version}"
-printf "${GREEN}[INFO] Yarn: ${yarn_version}"
-printf "${GREEN}[INFO] TypeScript: ${typescript_version/"Version "/"v"}"
-printf "${GREEN}[INFO] ESLint: ${eslint_version}"
+printf "${GREEN}[INFO] === Kawaii VS Code - Test ===\n"
+printf "${GREEN}[INFO] Node: ${node_version}\n"
+printf "${GREEN}[INFO] Yarn: ${yarn_version}\n"
+printf "${GREEN}[INFO] TypeScript: ${typescript_version/"Version "/"v"}\n"
+printf "${GREEN}[INFO] ESLint: ${eslint_version}\n\n"
 
 dir="dist"
 
