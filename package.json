@@ -67,6 +67,11 @@
     ],
     "commands": [
       {
+        "command": "kawaii-vscode.command.baka",
+        "title": "Kawaii VS Code - Baka",
+        "category": "Kawaii VS Code - SFW"
+      },
+      {
         "command": "kawaii-vscode.command.catgirl",
         "title": "Kawaii VS Code - Catgirl",
         "category": "Kawaii VS Code - SFW"

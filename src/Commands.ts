@@ -9,9 +9,11 @@ import LewdFoxgirlCommand from './command/picture/nsfw/LewdFoxgirlCommand'
 import HugCommand from './command/picture/HugCommand'
 import PatCommand from './command/picture/PatCommand'
 import WaifuCommand from './command/picture/WaifuCommand'
+import BakaCommand from './command/picture/BakaCommand'
 
 function getCommandList (context: ExtensionContext): Command[] {
   return [
+    new BakaCommand(context),
     new CatgirlCommand(context),
     new CatGirlGifCommand(context),
     new FoxgirlCommand(context),
