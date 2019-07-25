@@ -112,6 +112,11 @@
         "category": "Kawaii VS Code - SFW"
       },
       {
+        "command": "kawaii-vscode.command.poke",
+        "title": "Kawaii VS Code - Poke",
+        "category": "Kawaii Vs Code - SFW"
+      },
+      {
         "command": "kawaii-vscode.command.slap",
         "title": "Kawaii VS Code - Slap",
         "category": "Kawaii VS Code - SFW"

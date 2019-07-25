@@ -14,6 +14,7 @@ import SmugCommand from './command/picture/SmugCommand'
 import FeedCommand from './command/picture/FeedCommand'
 import SlapCommand from './command/picture/SlapCommand'
 import CuddleCommand from './command/picture/CuddleCommand'
+import PokeCommand from './command/picture/PokeCommand'
 
 function getCommandList (context: ExtensionContext): Command[] {
   return [
@@ -26,6 +27,7 @@ function getCommandList (context: ExtensionContext): Command[] {
     new HugCommand(context),
     new KissCommand(context),
     new PatCommand(context),
+    new PokeCommand(context),
     new SlapCommand(context),
     new SmugCommand(context),
     new WaifuCommand(context),
