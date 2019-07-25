@@ -1,9 +1,14 @@
 import PictureCommand from '../base/PictureCommand'
+import { ExtensionContext } from 'vscode'
 
 export default class extends PictureCommand {
+  public constructor (context: ExtensionContext) {
+    super(context, 'kiss')
+  }
+
   public async run (): Promise<void> {
     if (this.getVersion() === 'v3') {
-      const data = await this.v3.getSfwGif("kiss").then((res) => res.data)
+      const data = await this.v3.getSfwGif('kiss').then((res) => res.data)
       if (data.status.success === false) {
         const message = data.status.message ? data.status.message : 'Request failed.'
         this.window.showErrorMessage(`Code ${data.status.code}: ${message}`)

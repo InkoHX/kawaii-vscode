@@ -6,15 +6,21 @@ import CatGirlGifCommand from './command/picture/gif/CatgirlGifCommand'
 import KissCommand from './command/picture/KissCommand'
 import LewdCatgirlCommand from './command/picture/nsfw/LewdCatgirlCommand'
 import LewdFoxgirlCommand from './command/picture/nsfw/LewdFoxgirlCommand'
+import HugCommand from './command/picture/HugCommand'
+import PatCommand from './command/picture/PatCommand'
+import WaifuCommand from './command/picture/WaifuCommand'
 
 function getCommandList (context: ExtensionContext): Command[] {
   return [
-    new CatgirlCommand(context, 'catgirl'),
-    new CatGirlGifCommand(context, 'catgirl-gif'),
-    new FoxgirlCommand(context, 'foxgirl'),
-    new KissCommand(context, 'kiss'),
-    new LewdCatgirlCommand(context, 'lewd-catgirl', { nsfw: true }),
-    new LewdFoxgirlCommand(context, 'lewd-foxgirl', { nsfw: true })
+    new CatgirlCommand(context),
+    new CatGirlGifCommand(context),
+    new FoxgirlCommand(context),
+    new HugCommand(context),
+    new KissCommand(context),
+    new PatCommand(context),
+    new WaifuCommand(context),
+    new LewdCatgirlCommand(context),
+    new LewdFoxgirlCommand(context)
   ]
 }
 

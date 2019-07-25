@@ -82,8 +82,23 @@
         "category": "Kawaii VS Code - SFW"
       },
       {
+        "command": "kawaii-vscode.command.hug",
+        "title": "Kawaii VS Code - Hug",
+        "category": "Kawaii VS Code - SFW"
+      },
+      {
         "command": "kawaii-vscode.command.kiss",
         "title": "Kawaii VS Code - Kiss",
+        "category": "Kawaii VS Code - SFW"
+      },
+      {
+        "command": "kawaii-vscode.command.pat",
+        "title": "Kawaii VS Code - Pat",
+        "category": "Kawaii VS Code - SFW"
+      },
+      {
+        "command": "kawaii-vscode.command.waifu",
+        "title": "Kawaii VS Code - Waifu",
         "category": "Kawaii VS Code - SFW"
       },
       {

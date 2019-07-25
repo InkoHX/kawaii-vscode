@@ -1,6 +1,11 @@
 import PictureCommand from '../../base/PictureCommand'
+import { ExtensionContext } from 'vscode'
 
 export default class extends PictureCommand {
+  public constructor (context: ExtensionContext) {
+    super(context, 'catgirl-gif')
+  }
+
   public async run (): Promise<void> {
     if (this.getVersion() === 'v3') {
       const data = await this.v3.getSfwGif('neko').then((res) => res.data)
