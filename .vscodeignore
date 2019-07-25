@@ -9,5 +9,3 @@ tsconfig.tsbuildinfo
 .eslintrc.json
 .travis.yml
 yarn.lock
-*.map
-*.js.map
