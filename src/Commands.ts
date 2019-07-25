@@ -15,6 +15,7 @@ import FeedCommand from './command/picture/FeedCommand'
 import SlapCommand from './command/picture/SlapCommand'
 import CuddleCommand from './command/picture/CuddleCommand'
 import PokeCommand from './command/picture/PokeCommand'
+import TickleCommand from './command/picture/TickleCommand'
 
 function getCommandList (context: ExtensionContext): Command[] {
   return [
@@ -30,6 +31,7 @@ function getCommandList (context: ExtensionContext): Command[] {
     new PokeCommand(context),
     new SlapCommand(context),
     new SmugCommand(context),
+    new TickleCommand(context),
     new WaifuCommand(context),
     new LewdCatgirlCommand(context),
     new LewdFoxgirlCommand(context)
