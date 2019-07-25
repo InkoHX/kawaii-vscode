@@ -34,12 +34,7 @@
     "theme": "dark"
   },
   "activationEvents": [
-    "onCommand:kawaii-vscode.command.catgirl",
-    "onCommand:kawaii-vscode.command.catgirl-gif",
-    "onCommand:kawaii-vscode.command.foxgirl",
-    "onCommand:kawaii-vscode.command.kiss",
-    "onCommand:kawaii-vscode.command.lewd-catgirl",
-    "onCommand:kawaii-vscode.command.lewd-foxgirl"
+    "*"
   ],
   "contributes": {
     "configuration": [
