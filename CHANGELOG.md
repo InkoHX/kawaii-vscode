@@ -2,6 +2,8 @@
 
 ## Unrelease
 
+...
+
 ## [1.0.3](https://github.com/InkoHX/kawaii-vscode-releases/tag/1.0.3) - 2019-07-25
 
 ### Update - Command
