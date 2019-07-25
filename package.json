@@ -102,6 +102,11 @@
         "category": "Kawaii VS Code - SFW"
       },
       {
+        "command": "kawaii-vscode.command.smug",
+        "title": "Kawaii VS Code - Smug",
+        "category": "Kawaii VS Code - SFW"
+      },
+      {
         "command": "kawaii-vscode.command.waifu",
         "title": "Kawaii VS Code - Waifu",
         "category": "Kawaii VS Code - SFW"

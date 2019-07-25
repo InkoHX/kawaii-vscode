@@ -10,6 +10,7 @@ import HugCommand from './command/picture/HugCommand'
 import PatCommand from './command/picture/PatCommand'
 import WaifuCommand from './command/picture/WaifuCommand'
 import BakaCommand from './command/picture/BakaCommand'
+import SmugCommand from './command/picture/SmugCommand';
 
 function getCommandList (context: ExtensionContext): Command[] {
   return [
@@ -20,6 +21,7 @@ function getCommandList (context: ExtensionContext): Command[] {
     new HugCommand(context),
     new KissCommand(context),
     new PatCommand(context),
+    new SmugCommand(context),
     new WaifuCommand(context),
     new LewdCatgirlCommand(context),
     new LewdFoxgirlCommand(context)
