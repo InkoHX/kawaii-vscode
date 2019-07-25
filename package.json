@@ -107,6 +107,11 @@
         "category": "Kawaii VS Code - SFW"
       },
       {
+        "command": "kawaii-vscode.command.slap",
+        "title": "Kawaii VS Code - Slap",
+        "category": "Kawaii VS Code - SFW"
+      },
+      {
         "command": "kawaii-vscode.command.smug",
         "title": "Kawaii VS Code - Smug",
         "category": "Kawaii VS Code - SFW"
