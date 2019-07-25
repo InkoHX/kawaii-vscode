@@ -38,16 +38,10 @@ sleep 3
 
 dir="dist"
 
-printf "${YELLOW}[TEST] ${NOCOLOR}Checking the code.\n\n"
+printf "${YELLOW}[TEST] ${NOCOLOR}linting code.\n\n"
 yarn run lint
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n\n"
 
-if [ -d $dir ]; then
-  printf "${YELLOW}[INFO] ${NOCOLOR}Removing old output folder...\n"
-  rm -rf $dir
-  printf "${GREEN}[INFO] ${CYAN}Done.\n"
-fi
-
-printf "${YELLOW}[TEST] ${NOCOLOR}Checking for errors.\n\n"
+printf "${YELLOW}[TEST] ${NOCOLOR}checking error.\n\n"
 yarn run compile --noEmit
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n"
