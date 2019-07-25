@@ -34,7 +34,20 @@
     "theme": "dark"
   },
   "activationEvents": [
-    "*"
+    "onCommand:kawaii-vscode.command.baka",
+    "onCommand:kawaii-vscode.command.catgirl",
+    "onCommand:kawaii-vscode.command.catgirl-gif",
+    "onCommand:kawaii-vscode.command.cuddle",
+    "onCommand:kawaii-vscode.command.feed",
+    "onCommand:kawaii-vscode.command.foxgirl",
+    "onCommand:kawaii-vscode.command.hug",
+    "onCommand:kawaii-vscode.command.kiss",
+    "onCommand:kawaii-vscode.command.pat",
+    "onCommand:kawaii-vscode.command.poke",
+    "onCommand:kawaii-vscode.command.slap",
+    "onCommand:kawaii-vscode.command.smug",
+    "onCommand:kawaii-vscode.command.lewd-catgirl",
+    "onCommand:kawaii-vscode.command.lewd-foxgirl"
   ],
   "contributes": {
     "configuration": [

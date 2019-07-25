@@ -1,6 +1,5 @@
 .vscode/**
 .github/**
-node_modules/**
 src/**
 scripts/**
 .gitignore
