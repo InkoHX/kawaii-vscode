@@ -3,7 +3,7 @@
   "preview": false,
   "displayName": "Kawaii VS Code",
   "icon": "media/icon.png",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Heal fatigue with cute images.",
   "main": "dist/Extension.js",
   "repository": "https://github.com/InkoHX/kawaii-vscode.git",
