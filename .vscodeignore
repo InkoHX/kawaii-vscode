@@ -6,7 +6,8 @@ scripts/**
 .gitignore
 tsconfig.json
 tsconfig.tsbuildinfo
-tslint.json
+.eslintrc.json
 .travis.yml
 yarn.lock
 *.map
+*.js.map
