@@ -82,6 +82,11 @@
         "category": "Kawaii VS Code - SFW"
       },
       {
+        "command": "kawaii-vscode.command.cuddle",
+        "title": "Kawaii VS Code - Cuddle",
+        "category": "Kawaii VS Code - SFW"
+      },
+      {
         "command": "kawaii-vscode.command.feed",
         "title": "Kawaii VS Code - Feed",
         "category": "Kawaii VS Code - SFW"

@@ -13,12 +13,14 @@ import BakaCommand from './command/picture/BakaCommand'
 import SmugCommand from './command/picture/SmugCommand'
 import FeedCommand from './command/picture/FeedCommand'
 import SlapCommand from './command/picture/SlapCommand'
+import CuddleCommand from './command/picture/CuddleCommand'
 
 function getCommandList (context: ExtensionContext): Command[] {
   return [
     new BakaCommand(context),
     new CatgirlCommand(context),
     new CatGirlGifCommand(context),
+    new CuddleCommand(context),
     new FeedCommand(context),
     new FoxgirlCommand(context),
     new HugCommand(context),
