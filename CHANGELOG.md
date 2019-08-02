@@ -4,6 +4,10 @@
 
 ...
 
+## [1.0.4](https://github.com/InkoHX/kawaii-vscode-releases/tag/1.0.4) - 2019-08-02
+
+- Delete Keybind
+
 ## [1.0.3](https://github.com/InkoHX/kawaii-vscode-releases/tag/1.0.3) - 2019-07-25
 
 ### Update - Command

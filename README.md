@@ -20,12 +20,3 @@ Give you healing during the break.
 ------------------------------------------------------------------------------
 
 ![Catgirl Screenshot - Kawaii VS Code v1.0.2](https://github.com/InkoHX/kawaii-vscode/blob/master/media/screenshot-2.png?raw=true)
-
-## Keybindings
-
-|            Command             |     Key     |
-| :----------------------------: | :---------: |
-|    Kawaii VS Code - Catgirl    |  `Shift+C`  |
-| Kawaii VS Code - Catgirl (GIF) | `Shift+G C` |
-|    Kawaii VS Code - Foxgirl    |  `Shift+F`  |
-|     Kawaii VS Code - Kiss      |  `Shift+K`  |

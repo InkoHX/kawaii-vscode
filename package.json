@@ -154,32 +154,6 @@
         "title": "Kawaii VS Code - Foxgirl",
         "category": "Kawaii VS Code - NSFW"
       }
-    ],
-    "keybindings": [
-      {
-        "key": "Shift+C",
-        "command": "kawaii-vscode.command.catgirl"
-      },
-      {
-        "key": "Shift+F",
-        "command": "kawaii-vscode.command.foxgirl"
-      },
-      {
-        "key": "Shift+N C",
-        "command": "kawaii-vscode.command.lewd-catgirl"
-      },
-      {
-        "key": "Shift+N F",
-        "command": "kawaii-vscode.command.lewd-foxgirl"
-      },
-      {
-        "key": "Shift+G C",
-        "command": "kawaii-vscode.command.catgirl-gif"
-      },
-      {
-        "key": "Shift+K",
-        "command": "kawaii-vscode.command.kiss"
-      }
     ]
   },
   "dependencies": {
