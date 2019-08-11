@@ -42,16 +42,6 @@ printf "${YELLOW}[TEST] ${NOCOLOR}checks TypeScript code.\n\n"
 yarn run lint
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n\n"
 
-if [ -d $dir ]; then
-  printf "${YELLOW}[INFO] ${NOCOLOR}Removing old output folder...\n"
-  rm -rf $dir
-  printf "${GREEN}[INFO] ${CYAN}Done.\n"
-fi
-
 printf "${YELLOW}[TEST] ${NOCOLOR}Test compile\n\n"
-yarn run compile
+yarn run compile --noEmit
 printf "\n${GREEN}[TEST] ${CYAN}Passing\n"
-
-printf "${YELLOW}[INFO] ${NOCOLOR}Removing output folder...\n"
-rm -rf $dir
-printf "${GREEN}[INFO] ${CYAN}Done.\n"
