@@ -3,7 +3,8 @@ sudo: false
 dist: trusty
 
 language: node_js
-node_js: 10
+node_js: 
+  - '10'
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
