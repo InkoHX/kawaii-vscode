@@ -13,7 +13,9 @@
   "license": "MIT",
   "scripts": {
     "compile": "tsc -p .",
+    "compile:test": "tsc -p . --noEmit",
     "watch": "tsc -w -p .",
+    "watch:test": "tsc -w -p . --noEmit",
     "lint": "eslint --ext .ts --ignore-path .gitignore ./src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore ./src --fix",
     "vscode:prepublish": "yarn run lint && yarn run compile"
