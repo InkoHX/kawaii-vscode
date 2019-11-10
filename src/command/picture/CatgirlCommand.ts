@@ -3,7 +3,6 @@ import PictureCommand from '../PictureCommand'
 import { window } from 'vscode'
 
 export default class Catgirl extends PictureCommand {
-  // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   constructor() {
     super('catgirl')
   }
