@@ -1,24 +1,37 @@
-import PictureCommand from '../base/PictureCommand'
-import { ExtensionContext } from 'vscode'
+import Nekoslife from '../../api/nekoslife/Nekoslife'
+import PictureCommand from '../PictureCommand'
+import { window } from 'vscode'
 
-export default class extends PictureCommand {
-  public constructor (context: ExtensionContext) {
-    super(context, 'catgirl')
+export default class Catgirl extends PictureCommand {
+  // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
+  constructor() {
+    super('catgirl')
   }
 
-  public async run (): Promise<void> {
-    if (this.getVersion() === 'v3') {
-      const data = await this.v3.getSfwImg('neko').then((res) => res.data)
-      if (data.status.success === false) {
-        const message = data.status.message ? data.status.message : 'Request failed.'
-        this.window.showErrorMessage(`Code ${data.status.code}: ${message}`)
-      } else if (!data.response.url) this.window.showErrorMessage('Image URL not found')
-      else this.createWebviewPanel(data.response.url)
-    } else {
-      const data = await this.v2.getSfwBody('neko')
-      if (data.msg) this.window.showErrorMessage(data.msg === '404' ? 'API not found.' : data.msg)
-      else if (!data.url) this.window.showErrorMessage('Image URL not found.')
-      else this.createWebviewPanel(data.url)
+  public async run(): Promise<void> {
+    const API = this.getNekoslife()
+
+    if (API === Nekoslife.v2) {
+      await new API().fetchSfwBody('neko')
+        .then((body) => {
+          if (body.msg) window.showErrorMessage(body.msg)
+          else this.createWebviewPanel(body.url)
+        })
+        .catch((error) => {
+          window.showErrorMessage(error)
+        })
+    }
+
+    if (API === Nekoslife.v3) {
+      await new API().fetchSfwImg('neko')
+        .then((body) => {
+          if (body.data.status.code !== 200) {
+            window.showErrorMessage(`HTTPS CODE: ${body.data.status.code} : ${body.data.status.message ?? 'No Message'}`)
+          } else this.createWebviewPanel(body.data.response.url)
+        })
+        .catch((error) => {
+          window.showErrorMessage(error)
+        })
     }
   }
 }

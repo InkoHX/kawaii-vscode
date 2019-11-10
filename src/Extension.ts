@@ -1,6 +1,6 @@
 import { ExtensionContext } from 'vscode'
-import { registerCommands } from './Commands'
+import commandLoader from './CommandLoader'
 
-export function activate (context: ExtensionContext): void {
-  registerCommands(context)
+export function activate(context: ExtensionContext): void {
+  commandLoader(context)
 }
