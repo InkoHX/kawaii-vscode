@@ -4,7 +4,7 @@ dist: trusty
 
 language: node_js
 node_js: 
-  - '10'
+  - '12'
 
 before_install: echo "//npm.pkg.github.com/:_authToken=$GPR_TOKEN" >> ~/.npmrc
 
@@ -14,8 +14,7 @@ script:
   - npm run lint
   - npm run compile:test
 
-cache:
-  npm: true
+cache: npm
 
 notifications:
   email: false
