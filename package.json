@@ -18,7 +18,7 @@
     "watch:test": "tsc -w -p . --noEmit",
     "lint": "eslint --ext .ts --ignore-path .gitignore ./src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore ./src --fix",
-    "vscode:prepublish": "yarn run lint && yarn run compile"
+    "vscode:prepublish": "npm run lint && npm run compile"
   },
   "bugs": {
     "url": "https://github.com/InkoHX/kawaii-vscode/issues"
