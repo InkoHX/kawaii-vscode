@@ -8,10 +8,10 @@ export default class Catgirl extends PictureCommand {
   }
 
   public async run(): Promise<void> {
-    const API = this.getNekoslife()
+    const API = new (this.getNekoslife())
 
-    if (API === Nekoslife.v2) {
-      await new API().fetchSfwBody('neko')
+    if (API instanceof Nekoslife.v2) {
+      await API.fetchSfwBody('neko')
         .then((body) => {
           if (body.msg) window.showErrorMessage(body.msg)
           else this.createWebviewPanel(body.url)
@@ -21,8 +21,8 @@ export default class Catgirl extends PictureCommand {
         })
     }
 
-    if (API === Nekoslife.v3) {
-      await new API().fetchSfwImg('neko')
+    if (API instanceof Nekoslife.v3) {
+      await API.fetchSfwImg('neko')
         .then((body) => {
           if (body.data.status.code !== 200) {
             window.showErrorMessage(`HTTPS CODE: ${body.data.status.code} : ${body.data.status.message ?? 'No Message'}`)
