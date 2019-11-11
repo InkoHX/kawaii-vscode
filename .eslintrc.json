@@ -2,7 +2,6 @@
   "extends": "@inkohx/eslint-config-codestyle/typescript",
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "sourceType": "module",
     "project": "./tsconfig.json"
   },
   "plugins": [
