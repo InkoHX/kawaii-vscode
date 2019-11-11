@@ -2,11 +2,13 @@ import vscode, { ExtensionContext } from 'vscode'
 import Catgirl from './command/picture/CatgirlCommand'
 import Foxgirl from './command/picture/FoxgirlCommand'
 import LewdCatgirl from './command/picture/nsfw/LewdCatgirlCommand'
+import LewdFoxgirl from './command/picture/nsfw/LewdFoxgirlCommand'
 
 const commands = [
   new Catgirl(),
   new Foxgirl(),
-  new LewdCatgirl()
+  new LewdCatgirl(),
+  new LewdFoxgirl()
 ]
 
 export default (context: ExtensionContext): void => {
