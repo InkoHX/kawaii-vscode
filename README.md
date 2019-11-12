@@ -9,7 +9,6 @@ Give you healing during the break.
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/InkoHX.kawaii-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=InkoHX.kawaii-vscode&ssr=false)
 [![Build Status](https://travis-ci.org/InkoHX/kawaii-vscode.svg?branch=master)](https://travis-ci.org/InkoHX/kawaii-vscode)
 [![Greenkeeper badge](https://badges.greenkeeper.io/InkoHX/kawaii-vscode.svg)](https://greenkeeper.io/)
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 </div>
 
