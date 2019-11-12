@@ -1,4 +1,4 @@
-import { ViewColumn, Webview, window, workspace } from 'vscode'
+import { ViewColumn, Webview, WebviewPanel, window, workspace } from 'vscode'
 import Command from './Command'
 import Nekoslife from '../api/nekoslife/Nekoslife'
 
@@ -9,17 +9,16 @@ export default abstract class PictureCommand extends Command {
     else return Nekoslife.v3
   }
 
-  public createWebviewPanel(url?: string): void {
-    if (!url) {
-      window.showErrorMessage('URL is undefined.')
-
-      return
-    }
+  public createWebviewPanel(url?: string): WebviewPanel {
+    if (!url) throw new Error('URL is undefined.')
 
     const panel = window.createWebviewPanel('kawaii-vscode.webview', `Kawaii VS Code - ${this.name}`, { viewColumn: ViewColumn.One }, {
       retainContextWhenHidden: true
     })
+
     panel.webview.html = this.getHTMLContent(url, panel.webview)
+
+    return panel
   }
 
   private getHTMLContent(url: string, webview: Webview): string {
