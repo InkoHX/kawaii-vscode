@@ -8,7 +8,7 @@ node_js:
 
 before_install: echo "//npm.pkg.github.com/:_authToken=$GPR_TOKEN" >> ~/.npmrc
 
-install: npm ci
+install: npm install
 
 script:
   - npm run lint
