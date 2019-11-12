@@ -16,7 +16,7 @@ const commands = [
 export default (context: ExtensionContext): void => {
   for (const command of commands) {
     context.subscriptions.push(vscode.commands.registerCommand(command.commandName, () => {
-      const isNSFW = vscode.workspace.getConfiguration().get('kawaii-vscode.config.nsfw')
+      const isNSFW: boolean = vscode.workspace.getConfiguration().get('kawaii-vscode.config.nsfw', false)
       if (command.nsfw && !isNSFW) {
         vscode.window.showInformationMessage('このコマンドを使用するには設定からNSFWコンテンツの表示を許可してください。')
 
