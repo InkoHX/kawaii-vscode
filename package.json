@@ -3,7 +3,7 @@
   "preview": false,
   "displayName": "Kawaii VS Code",
   "icon": "media/icon.png",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Heal fatigue with cute images.",
   "main": "dist/Extension.js",
   "repository": "https://github.com/InkoHX/kawaii-vscode.git",
@@ -13,10 +13,12 @@
   "license": "MIT",
   "scripts": {
     "compile": "tsc -p .",
+    "compile:test": "tsc -p . --noEmit",
     "watch": "tsc -w -p .",
+    "watch:test": "tsc -w -p . --noEmit",
     "lint": "eslint --ext .ts --ignore-path .gitignore ./src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore ./src --fix",
-    "vscode:prepublish": "yarn run lint && yarn run compile"
+    "vscode:prepublish": "npm run lint && npm run compile"
   },
   "bugs": {
     "url": "https://github.com/InkoHX/kawaii-vscode/issues"
@@ -34,18 +36,9 @@
     "theme": "dark"
   },
   "activationEvents": [
-    "onCommand:kawaii-vscode.command.baka",
     "onCommand:kawaii-vscode.command.catgirl",
     "onCommand:kawaii-vscode.command.catgirl-gif",
-    "onCommand:kawaii-vscode.command.cuddle",
-    "onCommand:kawaii-vscode.command.feed",
     "onCommand:kawaii-vscode.command.foxgirl",
-    "onCommand:kawaii-vscode.command.hug",
-    "onCommand:kawaii-vscode.command.kiss",
-    "onCommand:kawaii-vscode.command.pat",
-    "onCommand:kawaii-vscode.command.poke",
-    "onCommand:kawaii-vscode.command.slap",
-    "onCommand:kawaii-vscode.command.smug",
     "onCommand:kawaii-vscode.command.lewd-catgirl",
     "onCommand:kawaii-vscode.command.lewd-foxgirl"
   ],
@@ -57,28 +50,21 @@
           "kawaii-vscode.config.nsfw": {
             "description": "NSFW（R18）コマンドを使用できるようにします。",
             "type": "boolean",
-            "default": false,
-            "scope": "window"
+            "default": false
           },
           "kawaii-vscode.config.version": {
-            "description": "Nekoslifeのバージョンを変更します。",
+            "description": "Nekoslife APIのバージョンを変更します。",
             "type": "string",
             "enum": [
               "v2",
               "v3"
             ],
-            "default": "v3",
-            "scope": "window"
+            "default": "v3"
           }
         }
       }
     ],
     "commands": [
-      {
-        "command": "kawaii-vscode.command.baka",
-        "title": "Kawaii VS Code - Baka",
-        "category": "Kawaii VS Code - SFW"
-      },
       {
         "command": "kawaii-vscode.command.catgirl",
         "title": "Kawaii VS Code - Catgirl",
@@ -90,58 +76,8 @@
         "category": "Kawaii VS Code - SFW"
       },
       {
-        "command": "kawaii-vscode.command.cuddle",
-        "title": "Kawaii VS Code - Cuddle",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.feed",
-        "title": "Kawaii VS Code - Feed",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
         "command": "kawaii-vscode.command.foxgirl",
         "title": "Kawaii VS Code - Foxgirl",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.hug",
-        "title": "Kawaii VS Code - Hug",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.kiss",
-        "title": "Kawaii VS Code - Kiss",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.pat",
-        "title": "Kawaii VS Code - Pat",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.poke",
-        "title": "Kawaii VS Code - Poke",
-        "category": "Kawaii Vs Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.slap",
-        "title": "Kawaii VS Code - Slap",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.smug",
-        "title": "Kawaii VS Code - Smug",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.tickle",
-        "title": "Kawaii Vs Code - Tickle",
-        "category": "Kawaii VS Code - SFW"
-      },
-      {
-        "command": "kawaii-vscode.command.waifu",
-        "title": "Kawaii VS Code - Waifu",
         "category": "Kawaii VS Code - SFW"
       },
       {
@@ -160,21 +96,16 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@types/node": "^12.7.1",
-    "@types/node-fetch": "^2.3.7",
-    "@types/vscode": "^1.37.0",
-    "@typescript-eslint/eslint-plugin": "^2.1.0",
-    "@typescript-eslint/parser": "^2.0.0",
-    "eslint": "^6.1.0",
-    "eslint-config-standard": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "typescript": "^3.5.3",
-    "vscode": "^1.1.35"
+    "@inkohx/eslint-config-codestyle": "^1.1.3",
+    "@types/node": "^12.12.7",
+    "@types/node-fetch": "^2.5.3",
+    "@types/vscode": "^1.40.0",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "^6.6.0",
+    "typescript": "^3.7.2"
   },
   "engines": {
-    "vscode": "^1.37.1"
+    "vscode": "^1.40.0"
   }
 }
