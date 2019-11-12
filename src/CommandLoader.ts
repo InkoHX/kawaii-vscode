@@ -1,9 +1,9 @@
 import vscode, { ExtensionContext } from 'vscode'
-import Catgirl from './command/picture/CatgirlCommand'
-import CatgirlGif from './command/gif/CatgirlGifCommand'
-import Foxgirl from './command/picture/FoxgirlCommand'
-import LewdCatgirl from './command/picture/nsfw/LewdCatgirlCommand'
-import LewdFoxgirl from './command/picture/nsfw/LewdFoxgirlCommand'
+import Catgirl from './command/webview/picture/CatgirlCommand'
+import CatgirlGif from './command/webview/gif/CatgirlGifCommand'
+import Foxgirl from './command/webview/picture/FoxgirlCommand'
+import LewdCatgirl from './command/webview/picture/nsfw/LewdCatgirlCommand'
+import LewdFoxgirl from './command/webview/picture/nsfw/LewdFoxgirlCommand'
 
 const commands = [
   new Catgirl(),
