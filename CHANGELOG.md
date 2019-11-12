@@ -1,21 +1,8 @@
 # Change Log
 
-## 2.0.0 - 2019-11-12
+## Unrelease
 
-Rewrite the core program.
-
-### Remove commands
-
-- Remove Baka command.
-- Remove Cuddle command.
-- Remove Feed command.
-- Remove Hug command.
-- Remove Pat command.
-- Remove Poke command.
-- Remove Slap command.
-- Remove Smug command.
-- Remove Tickle command.
-- Remove Waifu command.
+...
 
 ## [1.0.4](https://github.com/InkoHX/kawaii-vscode-releases/tag/1.0.4) - 2019-08-02
 
@@ -25,7 +12,7 @@ Rewrite the core program.
 
 ### Update - Command
 
-- Kiss Command [e867dd6](https://github.com/InkoHX/kawaii-vscode/commit/62b3f3ca17e80769449e8fcec35e40afb10374cb)
+- Kiss Command `[e867dd6](https://github.com/InkoHX/kawaii-vscode/commit/62b3f3ca17e80769449e8fcec35e40afb10374cb)`
 
 ### Added - Command
 
