@@ -3,12 +3,11 @@ sudo: required
 dist: trusty
 
 language: node_js
-node_js: 
-  - '12'
+node_js: 12
 
 before_install: echo "//npm.pkg.github.com/:_authToken=$GPR_TOKEN" >> ~/.npmrc
 
-install: npm install
+install: npm ci
 
 script:
   - npm run lint
