@@ -3,7 +3,7 @@ import PictureCommand from '../../PictureCommand'
 import { window } from 'vscode'
 
 export default class LewdFoxgirl extends PictureCommand {
-  constructor() {
+  public constructor() {
     super('lewd-foxgirl', { nsfw: true })
   }
 

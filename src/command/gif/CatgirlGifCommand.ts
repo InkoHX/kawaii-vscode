@@ -3,7 +3,7 @@ import PictureCommand from '../PictureCommand'
 import { window } from 'vscode'
 
 export default class CatgirlGif extends PictureCommand {
-  constructor() {
+  public constructor() {
     super('catgirl-gif')
   }
 
